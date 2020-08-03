@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.css';
+body{
+    background-color:lightgrey;
+}
+
+
+
+mat-dialog-container {
+    position:fixed;
+    margin-left:400px;
+    margin-right: 400px;
+    top:400px;
+    
+ }

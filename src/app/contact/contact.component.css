@@ -1,0 +1,72 @@
+
+#mainDiv{
+   
+    margin-top:50px;
+    margin-left:200px;
+    margin-right:200px;
+    
+    align-items: center;
+
+}
+h1{
+    text-align: center;
+}
+h3{
+    display:inline;
+}
+#addContact{
+    float: right;
+    color:white;
+   
+    border: none;
+}
+#searchBar
+{
+    width:550px;
+    
+    
+}
+
+#srchBtn
+{
+    border:none;
+    background-color: blue;
+    color:white;
+    height:20px;
+    
+}
+p{
+    background-color: white;
+    /* width:650px; */
+    border-color:solid black;
+    height:50px;
+    margin-bottom:0px;
+    
+    
+    
+}
+/* #contactInfo
+{
+    /* width:650px; */
+    
+   
+/* } */ */
+#info
+{
+    margin-left:100px;
+}
+button{
+    margin:10px;
+}
+#deleteBtn
+{
+    float:right;
+    
+    border:none;
+    
+}
+#updateBtn
+{
+    float:right;
+    border:none;
+}

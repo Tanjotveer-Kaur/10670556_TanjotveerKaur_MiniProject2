@@ -1,0 +1,62 @@
+
+<div id="mainDiv">
+<h1>Phone Book App</h1>
+<h3>Contacts</h3>
+<button  (click)="display()"  class="btn btn-primary" id="addContact">+Add Button
+
+
+</button><br/><br/>
+<div id="info" *ngIf="isShow">
+  <input #x1 id="n1" type="text" placeholder="Enter Firstname"><br/>
+  <input #x2 id="n2" type="text" placeholder="Enter Lastname"><br/><br/>
+  <input #y id="p" type="text" placeholder="Enter number"><br/><br/>
+  
+  <button (click)="createContact(x1.value,x2.value,y.value)" class="btn btn-primary">Create</button>
+  <button class="btn btn-danger" (click)="display()">Cancel</button><br/>
+</div>
+
+
+<table><tr>
+  <td>
+    <input #search id="searchBar" type="text" placeholder="search for contact by last name" >
+  </td>
+  <td>
+    <button id="srchBtn" (click)="searchByLastName(search.value)"class="glyphicon glyphicon-search"></button>
+    </td>
+</tr></table>
+
+<div id="info" *ngIf="isShow1">
+  <p>
+    {{contact.fname}} {{contact.lname}} <br/>
+    {{contact.phone}}
+  
+  </p>
+  </div>
+
+  
+  
+<br/><br/>
+
+<div id="info" *ngIf="isShow2">
+  <p>
+    <input #update type="text" placeholder="Enter new number">
+  </p>
+</div>
+
+<section class="border" id="contactInfo" >
+  <p *ngFor="let c of contacts">
+      {{c.fname}} {{c.lname}}
+      <br/>
+      {{c.phone}}
+
+     
+
+      <button (click)="updateContact(c.fname,c.lname,update.value)" id="updateBtn" class="btn btn-primary">Update</button>
+      <button (click)="deleteContact(c.phone)" id="deleteBtn" class="btn btn-danger">Delete</button>
+
+  </p>
+</section>
+
+
+
+</div>
